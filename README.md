@@ -257,7 +257,7 @@ If translation is not found **reword-js** will throw a `console.warn` message.
 
 Example:
 
-![some](https://github.com/devbridge/reword-js/raw/translations/gifs/warnings.gif)
+![some](https://github.com/devbridge/reword-js/raw/master/gifs/warnings.gif)
 
 ## Console table
 
@@ -265,7 +265,7 @@ When loading up dictionary it's being validated and outputs information on what'
 
 Example:
 
-![some](https://github.com/devbridge/reword-js/raw/translations/gifs/table.gif)
+![some](https://github.com/devbridge/reword-js/raw/master/gifs/table.gif)
 
 # Integration
 
