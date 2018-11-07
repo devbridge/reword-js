@@ -1,0 +1,28 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "plugins": [
+    "jest"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base"
+  ],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "no-restricted-globals": "off",
+    "no-plusplus": "off"
+  },
+  "env": {
+    "jest/globals": true
+  },
+  "globals": {
+    "__DEV__": true,
+    "TEST": true
+  }
+}
