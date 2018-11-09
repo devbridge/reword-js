@@ -5,6 +5,10 @@
   "main": "lib/reword-js.cjs.js",
   "module": "lib/reword-js.esm.js",
   "browser": "lib/reword-js.umd.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devbridge/reword-js"
+  },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
