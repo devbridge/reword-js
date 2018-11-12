@@ -53,30 +53,27 @@ translateKey('someKey'); // translated language text
 As a script tag
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
+  <head> </head>
 
-<head>
-</head>
+  <body>
+    <script src="<path-to-the-module>/reword.umd.js"></script>
+    <script type="text/javascript">
+      reword.config(
+        {
+          /* ...dictionary */
+        },
+        {
+          /* ...options */
+        }
+      );
 
-<body>
-  <script src="<path-to-the-module>/reword.umd.js"></script>
-  <script type="text/javascript">
-    reword.config(
-      {
-        /* ...dictionary */
-      },
-      {
-        /* ...options */
-      }
-    );
-
-    reword.translate`Default language text`; // translated language text
-    reword.translateKey('someKey'); // translated language text
-  </script>
-</body>
-
+      reword.translate`Default language text`; // translated language text
+      reword.translateKey('someKey'); // translated language text
+    </script>
+  </body>
 </html>
 ```
 
@@ -116,10 +113,10 @@ const dictionary = {
 
 config(dictionary, { locale: 'xx-XX' });
 
-// Translate by key.
+// Translate by text.
 reword.translate`Translated language text`; // Translated language text
 
-// Translate by text.
+// Translate by key.
 reword.translateKey('example'); // Translated other language text
 ```
 
@@ -271,7 +268,7 @@ Example:
 
 ## React application
 
-Since **reword-js** is not tied to the state or store in react applications, thus it doesn not trigger a re-render. The easiest way is to trigger a re-render when language changes is by setting a `key` prop on the top most component in your React application. Once the key changes, React will re-render the DOM tree underneath.
+Since **reword-js** is not tied to the state or store in react applications, thus it does not trigger a re-render. The easiest way is to trigger a re-render when language changes is by setting a `key` prop on the top most component in your React application. Once the key changes, React will re-render the DOM tree underneath.
 
 Example:
 
