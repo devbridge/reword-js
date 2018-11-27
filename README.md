@@ -84,7 +84,7 @@ Reword can be used as a global instance, or separate instances created manually.
 Example:
 
 ```js
-import { Dictionary, config } from 'reword';
+import { Dictionary, config } from 'reword-js';
 
 //initialize as a standalone instance
 const reword = new Dictionary(dictionary, options);
@@ -100,7 +100,7 @@ Translating text can be acomplished in two ways. Either by key or by actual text
 Example:
 
 ```js
-import { translate, translateKey } from 'reword';
+import { translate, translateKey } from 'reword-js';
 
 const dictionary = {
   'en-US': {
@@ -127,7 +127,7 @@ Adding dynamic values to translations is as easy as adding them to a hard coded 
 Example:
 
 ```js
-import { translate, translateKey, config } from 'reword';
+import { translate, translateKey, config } from 'reword-js';
 
 const dictionary = {
   'en-US': {
@@ -188,7 +188,7 @@ const dictionary = {
 Example:
 
 ```js
-import { Dictionary, config } from 'reword';
+import { Dictionary, config } from 'reword-js';
 
 const dictionary = {};
 const options = {
