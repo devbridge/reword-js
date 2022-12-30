@@ -36,7 +36,7 @@
     "eslint-plugin-jest": "^21.27.2",
     "jest": "^24.8.0",
     "jest-junit": "^6.4.0",
-    "release-it": "^7.6.3",
+    "release-it": "^15.6.0",
     "rollup": "^0.65.2",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^9.3.4",
